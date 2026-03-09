@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import type { WhyFeature } from "../../../types/services";
 import styles from "./WhyProtolyteSection.module.css";
 
@@ -54,3 +55,6 @@ function WhyProtolyteSection({ features, image }: WhyProtolyteSectionProps): JSX
 }
 
 export default WhyProtolyteSection;
+
+
+

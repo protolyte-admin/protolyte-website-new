@@ -1,21 +1,24 @@
 .brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.65rem;
+  min-width: 0;
 }
 
 .icon {
-  width: 12rem;
-  height: 12rem;
+  width: 9rem;
+  height: 9rem;
   object-fit: contain;
   display: block;
+  flex-shrink: 0;
 }
 
 .textLight,
 .textDark {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: -0.02em;
+  white-space: nowrap;
 }
 
 .textLight {
@@ -24,4 +27,23 @@
 
 .textDark {
   color: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .icon {
+    width: 7.7rem;
+    height: 7.7rem;
+  }
+
+  .textLight,
+  .textDark {
+    font-size: 0.98rem;
+  }
+
+  .compactOnMobile .textLight,
+  .compactOnMobile .textDark {
+    max-width: 7.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }

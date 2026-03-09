@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import Footer from "../components/layout/Footer";
 import Navbar from "../components/layout/Navbar";
 import { footerGroups, navItems } from "../data/homeData";
@@ -135,3 +136,6 @@ function CaseStudiesPage(): JSX.Element {
 }
 
 export default CaseStudiesPage;
+
+
+

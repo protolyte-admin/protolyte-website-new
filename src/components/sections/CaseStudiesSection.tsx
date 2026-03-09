@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import type { CaseStudy } from "../../types/home";
 import PrimaryButton from "../common/PrimaryButton";
 import SectionHeader from "../common/SectionHeader";
@@ -32,3 +33,6 @@ function CaseStudiesSection({ studies }: CaseStudiesSectionProps): JSX.Element {
 }
 
 export default CaseStudiesSection;
+
+
+

@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import type { StatItem } from "../../types/home";
 import SectionHeader from "../common/SectionHeader";
 import styles from "./ClientValueSection.module.css";
@@ -44,3 +45,6 @@ function ClientValueSection({ stats, bulletPoints }: ClientValueSectionProps): J
 }
 
 export default ClientValueSection;
+
+
+

@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import type { ServicesFooterGroup } from "../../../types/services";
 import styles from "./ServicesFooter.module.css";
 
@@ -64,3 +65,6 @@ function ServicesFooter({ groups }: ServicesFooterProps): JSX.Element {
 }
 
 export default ServicesFooter;
+
+
+
