@@ -1,0 +1,429 @@
+.page {
+  min-height: 100vh;
+  color: var(--color-text-primary);
+
+    background-color: var(--color-background-dark);
+  background-image:
+    radial-gradient(at 0% 0%, rgba(37, 19, 236, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(147, 51, 234, 0.1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(37, 19, 236, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(59, 130, 246, 0.15) 0px, transparent 50%);
+}
+
+.hero,
+.foundationSection,
+.leadershipSection,
+.careersSection,
+.cultureSection,
+.ctaSection {
+  padding: 5rem 1.5rem;
+}
+
+.heroGrid,
+.foundationGrid,
+.centerHeading,
+.cultureHead,
+.ctaContent,
+.careersCard {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.badge {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(37, 19, 236, 0.25);
+  background: rgba(37, 19, 236, 0.1);
+  color: var(--color-primary);
+  padding: 0.35rem 0.7rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.badge span {
+  width: 0.45rem;
+  height: 0.45rem;
+  background: var(--color-primary);
+  border-radius: 999px;
+}
+
+.hero h1 {
+  margin: 1rem 0 1.2rem;
+  font-size: clamp(2.4rem, 7vw, 4.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.hero h1 span {
+  color: var(--color-primary);
+}
+
+.hero p {
+  margin: 0;
+  color: #64748b;
+  max-width: 38rem;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.heroImageWrap {
+  position: relative;
+}
+
+.heroGlow {
+  position: absolute;
+  inset: -0.8rem;
+  border-radius: 0.9rem;
+  background: rgba(37, 19, 236, 0.2);
+  filter: blur(26px);
+  z-index: 0;
+}
+
+.heroImageWrap img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  border-radius: 0.9rem;
+  border: 1px solid var(--color-border);
+  object-fit: cover;
+}
+
+.foundationSection {
+  background: #e2e8f0;
+}
+
+.foundationGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.foundationGrid h2,
+.leadershipSection h2,
+.cultureSection h2,
+.ctaSection h2,
+.careersCard h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 2.7rem);
+}
+
+.foundationGrid > div > p {
+  margin: 1rem 0 1.5rem;
+  color: #64748b;
+  line-height: 1.8;
+}
+
+.pillars {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pillars article {
+  display: flex;
+  gap: 1rem;
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 0.85rem;
+  padding: 1rem;
+}
+
+.pillars article > div:first-child {
+  background: rgba(37, 19, 236, 0.1);
+  color: var(--color-primary);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pillars h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1.2rem;
+}
+
+.pillars p {
+  margin: 0;
+  color: #64748b;
+}
+
+.foundationImageWrap {
+  min-height: 25rem;
+  border-radius: 0.9rem;
+  overflow: hidden;
+}
+
+.foundationImageWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.leadershipSection {
+  background: var(--color-background-light);
+}
+
+.centerHeading {
+  text-align: center;
+  margin-bottom: 2.2rem;
+}
+
+.centerHeading p {
+  margin: 0.8rem auto 0;
+  max-width: 36rem;
+  color: #64748b;
+}
+
+.leaderGrid {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.leaderCard {
+  padding: 0.2rem;
+}
+
+.leaderImageWrap {
+  border-radius: 0.85rem;
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  margin-bottom: 0.8rem;
+  aspect-ratio: 4 / 5;
+}
+
+.leaderImageWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1);
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.leaderCard:hover .leaderImageWrap img {
+  transform: scale(1.04);
+  filter: grayscale(0);
+}
+
+.leaderCard h4 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.leaderCard p {
+  margin: 0.2rem 0 0;
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.careersSection {
+  background: #f8fafc;
+}
+
+.careersCard {
+  border: 1px solid rgba(37, 19, 236, 0.24);
+  background: linear-gradient(135deg, rgba(37, 19, 236, 0.08), rgba(37, 19, 236, 0.02));
+  border-radius: 1rem;
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.careersTag {
+  margin: 0;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-size: 0.74rem;
+}
+
+.careersCard h2 {
+  margin-top: 0.5rem;
+}
+
+.careersCard p {
+  margin: 0.7rem 0 0;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.careersActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.careersPrimary,
+.careersSecondary {
+  text-decoration: none;
+  border-radius: 0.7rem;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+}
+
+.careersPrimary {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.careersSecondary {
+  border: 1px solid var(--color-border);
+  background: #ffffff;
+  color: var(--color-text-primary);
+}
+
+.cultureSection {
+  background: #e2e8f0;
+}
+
+.cultureHead {
+  margin-bottom: 1.7rem;
+}
+
+.cultureHead p {
+  margin: 0.7rem 0 0;
+  color: #64748b;
+}
+
+.masonry {
+  max-width: 1120px;
+  margin: 0 auto;
+  columns: 1;
+  column-gap: 1rem;
+}
+
+.masonry img,
+.cultureMetric {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 0.85rem;
+  border: 1px solid var(--color-border);
+  break-inside: avoid;
+}
+
+.cultureMetric {
+  background: var(--color-primary);
+  color: #ffffff;
+  padding: 1.3rem;
+  border: none;
+}
+
+.cultureMetric h3 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.cultureMetric p {
+  margin: 0.6rem 0 0;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.ctaSection {
+  position: relative;
+  overflow: hidden;
+}
+
+.ctaOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(37, 19, 236, 0.06);
+}
+
+.ctaContent {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.ctaContent p {
+  margin: 0.9rem auto 0;
+  max-width: 42rem;
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.ctaActions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  justify-content: center;
+}
+
+.primaryButton,
+.secondaryButton {
+  border-radius: 0.75rem;
+  padding: 0.85rem 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primaryButton {
+  border: none;
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.secondaryButton {
+  border: 1px solid var(--color-border);
+  background: #ffffff;
+  color: var(--color-text-primary);
+}
+
+@media (min-width: 640px) {
+  .leaderGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .masonry {
+    columns: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroGrid,
+  .foundationGrid,
+  .careersCard {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .leaderGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .masonry {
+    columns: 3;
+  }
+
+  .careersCard {
+    display: grid;
+    align-items: center;
+  }
+
+  .careersActions {
+    justify-content: flex-end;
+  }
+}

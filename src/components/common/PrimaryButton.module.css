@@ -1,0 +1,44 @@
+.button {
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  padding: 0.95rem 1.5rem;
+}
+
+.solid {
+  background: var(--color-primary);
+  color: #ffffff;
+  box-shadow: 0 12px 24px rgba(37, 19, 236, 0.2);
+}
+
+.solid:hover {
+  background: #180ad4;
+}
+
+.outline {
+  background: transparent;
+  color: var(--color-text-primary);
+  border-color: var(--color-border);
+}
+
+.outline:hover {
+  background: rgba(148, 163, 184, 0.12);
+}
+
+.light {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.light:hover {
+  color: #ffffff;
+  background: var(--color-primary);
+}
+
+.fullWidth {
+  width: 100%;
+}

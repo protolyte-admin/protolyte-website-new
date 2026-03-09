@@ -1,0 +1,123 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  backdrop-filter: blur(14px);
+  background: color-mix(in srgb, var(--color-background-light) 90%, transparent);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.container {
+  max-width: 1120px;
+  height: 5rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.desktopMenu {
+  display: none;
+  align-items: center;
+  gap: 1.7rem;
+}
+
+.link,
+.mobileLink {
+  font-size: 0.9rem;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.link:hover,
+.mobileLink:hover {
+  color: var(--color-primary);
+}
+
+.activeLink {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.cta {
+  font-size: 0.875rem;
+  padding: 0.72rem 1.2rem;
+}
+
+.menuToggle {
+  border: 1px solid var(--color-border);
+  background: #ffffff;
+  border-radius: 0.6rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.hamburger {
+  width: 1rem;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.16rem;
+}
+
+.bar {
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: #0f172a;
+}
+
+.closeIcon {
+  font-size: 1.05rem;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding: 0.75rem 1rem 1rem;
+  background: color-mix(in srgb, var(--color-background-light) 97%, transparent);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.1);
+}
+
+.mobileLink {
+  padding: 0.55rem 0;
+  font-size: 0.95rem;
+}
+
+.mobileCta {
+  width: 100%;
+  margin-top: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .desktopMenu {
+    display: flex;
+  }
+
+  .menuToggle,
+  .mobileMenu {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    height: 4.4rem;
+    padding: 0 1rem;
+  }
+}

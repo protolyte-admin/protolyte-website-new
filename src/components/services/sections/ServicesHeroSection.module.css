@@ -1,0 +1,123 @@
+.section {
+  position: relative;
+  overflow: hidden;
+  padding: 4.5rem 0 5rem;
+  background-color: var(--color-background-dark);
+  background-image:
+    radial-gradient(at 0% 0%, rgba(37, 19, 236, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(147, 51, 234, 0.1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(37, 19, 236, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(59, 130, 246, 0.15) 0px, transparent 50%);
+}
+
+.gradient {
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 50%;
+  background: linear-gradient(to left, rgba(37, 19, 236, 0.12), transparent);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.container {
+  position: relative;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.badge {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-primary);
+  border: 1px solid rgba(37, 19, 236, 0.25);
+  background: rgba(37, 19, 236, 0.08);
+  border-radius: 999px;
+  padding: 0.38rem 0.7rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.badge span {
+  width: 0.4rem;
+  height: 0.4rem;
+  background: var(--color-primary);
+  border-radius: 999px;
+}
+
+.container h2 {
+  margin: 0;
+  max-width: 54rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  color: #ffffff;
+}
+
+.container h2 span {
+  color: var(--color-primary);
+}
+
+.container p {
+  margin: 1.2rem 0 1.8rem;
+  max-width: 42rem;
+  color: #94a3b8;
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.darkButton {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.darkButton:hover {
+  background: #111827;
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 3rem 0 3.4rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .badge {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.64rem;
+    letter-spacing: 0.08em;
+  }
+
+  .container h2 {
+    font-size: clamp(1.8rem, 8.5vw, 2.25rem);
+    line-height: 1.15;
+  }
+
+  .container p {
+    margin: 0.95rem 0 1.3rem;
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions > * {
+    width: 100%;
+  }
+}
