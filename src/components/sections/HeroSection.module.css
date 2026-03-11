@@ -92,24 +92,124 @@
 
 .visualFrame {
   position: relative;
-  width: min(100%, 500px);
+  width: min(100%, 560px);
+  aspect-ratio: 1 / 1;
   border: 1px solid #334155;
   border-radius: 1.5rem;
   background: rgba(15, 23, 42, 0.68);
-  padding: 1rem;
   box-shadow: 0 28px 60px rgba(2, 6, 23, 0.45);
+  overflow: hidden;
+  transform: perspective(1200px) rotateX(8deg) rotateY(-6deg);
 }
 
-.image {
-  display: block;
+.waveCanvas {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 1rem;
+  height: 100%;
+  display: block;
+}
+
+.gridOverlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: radial-gradient(circle at 50% 50%, black 45%, transparent 94%);
+}
+
+.scanLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 24%;
+  background: linear-gradient(to bottom, rgba(37, 99, 235, 0), rgba(37, 99, 235, 0.2), rgba(37, 99, 235, 0));
+  animation: scan 5.2s linear infinite;
+  pointer-events: none;
+}
+
+.visualTag {
+  position: absolute;
+  top: 0.9rem;
+  left: 0.9rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #bfdbfe;
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.16);
+  border: 1px solid rgba(96, 165, 250, 0.3);
+}
+
+.visualMetric {
+  position: absolute;
+  right: 0.9rem;
+  bottom: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  max-width: 17rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.8rem;
+  background: rgba(2, 6, 23, 0.64);
+  border: 1px solid rgba(96, 165, 250, 0.24);
+}
+
+.visualMetric span {
+  font-size: 0.64rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #93c5fd;
+  font-weight: 700;
+}
+
+.visualMetric strong {
+  color: #e2e8f0;
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+@keyframes scan {
+  0% {
+    top: -28%;
+  }
+
+  100% {
+    top: 100%;
+  }
 }
 
 @media (min-width: 1024px) {
   .container {
     grid-template-columns: 1.1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 4.2rem 0 5rem;
+  }
+
+  .container {
+    gap: 1.6rem;
+  }
+
+  .description {
+    margin: 1.1rem 0 1.6rem;
+    font-size: 1rem;
+  }
+
+  .visualFrame {
+    transform: none;
+    width: min(100%, 420px);
+  }
+
+  .visualMetric {
+    left: 0.8rem;
+    right: 0.8rem;
+    max-width: none;
   }
 }
