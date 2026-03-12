@@ -75,10 +75,10 @@ export const clientValuePoints: string[] = [
 
 export const caseStudies: CaseStudy[] = [
   {
-    category: "FINTECH MODERNIZATION",
-    title: "Global Bank Automation Scaling",
+    category: "SALES MODERNIZATION",
+    title: "Retail Store Automation Scaling",
     description:
-      "How we helped a Fortune 500 bank automate 12 million transactions per month using custom NLP engines.",
+      "How we helped a Retail Store automate sales transactions per month using our custom recommendation and marketing engines.",
     imageUrl:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuAEXuMuMWIa_uAhueMSS2PM801YgxvtJ1BgHPExbsP_E8-Tadp8isvS0_QN9l6F5bvHplMc0xLQ9ghd-xrooGeYMApW48j8zDPDN97fSKvqXM5ziLDXIccTVr2c6BhZll0LKiF4kHu7EOCvb0JWwwXN9S7k45LCEpeFdVNpmX621eBSdEfVj-wePcZjIiJvmANgHfcFfJJgwfyYqmbsAGz2M2Ir4cKFleQ9smVrbk_QQKJFZM2vXilzzHf8b5x_s8unlzVYc24Fpf3Y",
     imageAlt: "Modern tech office with people working on computers and glowing screens",
