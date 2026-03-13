@@ -59,7 +59,7 @@ function Footer({ groups }: FooterProps): JSX.Element {
         </div>
 
         <div className={styles.bottomRow}>
-          <p>� 2024 Protolyte Systems Inc. All rights reserved.</p>
+          <p>� 2026 Protolyte Systems Inc. All rights reserved.</p>
           <div className={styles.bottomLinks}>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>

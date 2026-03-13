@@ -4,6 +4,7 @@ import AboutPage from "./pages/AboutPage";
 import CareersPage from "./pages/CareersPage";
 import CaseStudiesPage from "./pages/CaseStudiesPage";
 import HomePage from "./pages/HomePage";
+import RecoSalesPptPage from "./pages/RecoSalesPptPage";
 import ServicesPage from "./pages/ServicesPage";
 import SolutionsPage from "./pages/SolutionsPage";
 
@@ -18,6 +19,7 @@ function App(): JSX.Element {
         <Route path="/casestudies" element={<CaseStudiesPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/careers" element={<CareersPage />} />
+        <Route path="/products/recosales/ppt" element={<RecoSalesPptPage />} />
         <Route path="*" element={<Navigate to="/home" replace />} />
       </Routes>
     </BrowserRouter>
