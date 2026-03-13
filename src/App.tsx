@@ -1,5 +1,5 @@
 import type { JSX } from "react";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import AboutPage from "./pages/AboutPage";
 import CareersPage from "./pages/CareersPage";
 import CaseStudiesPage from "./pages/CaseStudiesPage";
@@ -10,7 +10,7 @@ import SolutionsPage from "./pages/SolutionsPage";
 
 function App(): JSX.Element {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<HomePage />} />
@@ -22,7 +22,7 @@ function App(): JSX.Element {
         <Route path="/products/recosales/ppt" element={<RecoSalesPptPage />} />
         <Route path="*" element={<Navigate to="/home" replace />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
