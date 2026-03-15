@@ -94,7 +94,7 @@ function AboutPage(): JSX.Element {
             {[
               {
                 name: "Sharath V N",
-                role: "Chief Machine Learning Architect",
+                role: "Chief Architect - AI & ML",
                 img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBDXp-AdUPAbaCWUVBSfzUyjbuO2jodpLkraVT-IdmXFO8qA5xgBHhbpxdlDaJ5LcL-IjdZ5ND7PKyaTMj8HvpFQSGFKC06x9A8XQpcEYji7EgSUkypoXnc6utkz6LjqiJIMFxTPVJRBNtD3kmQd7OsF0mVaJ_PRn_f06mH5LP67ufK5XxdHj1Wgi5ZWSmPzWmc6SbDbIWjrSnbQDi_QfWfR5U3kRl36EJYjJzcQ5n0uVo1QWCYcXpkIkInrp25NwjaaAar-WTqbED3",
               },
               {
@@ -102,6 +102,16 @@ function AboutPage(): JSX.Element {
                 role: "Chief Architect - Java",
                 img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBGOsly9_SGUvsjfwZZZyF9oaHTiDjENwGUJUqLfbivycdAZ6MVewdAYHzhmSWwhKxKxQ567URS-U5He5Igg3fvmcYcurajoVY-UrJ6N1IH9RUL1rOm___7RcHLjARg2LltJTDNWGQ3qLZD5TXNoGisUVMebn6uZPNjyJwvUD1HY4ZmFikV5hFpFk0M_IB4yoZAI_Vc_HPQn2G8a5k_TGzjkqNlsNUG7WZpUbwRmxY_ngsHzhmucdiYnrfSsQTz3K-kOM3VyDbMGnp6",
               },
+                {
+                name: "Gururaj V Desai",
+                role: "Chief of Operations, UI Architect",
+                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBDXp-AdUPAbaCWUVBSfzUyjbuO2jodpLkraVT-IdmXFO8qA5xgBHhbpxdlDaJ5LcL-IjdZ5ND7PKyaTMj8HvpFQSGFKC06x9A8XQpcEYji7EgSUkypoXnc6utkz6LjqiJIMFxTPVJRBNtD3kmQd7OsF0mVaJ_PRn_f06mH5LP67ufK5XxdHj1Wgi5ZWSmPzWmc6SbDbIWjrSnbQDi_QfWfR5U3kRl36EJYjJzcQ5n0uVo1QWCYcXpkIkInrp25NwjaaAar-WTqbED3",
+              },
+                {
+                name: "Shashank D R",
+                role: "Chief Architect - UI",
+                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBDXp-AdUPAbaCWUVBSfzUyjbuO2jodpLkraVT-IdmXFO8qA5xgBHhbpxdlDaJ5LcL-IjdZ5ND7PKyaTMj8HvpFQSGFKC06x9A8XQpcEYji7EgSUkypoXnc6utkz6LjqiJIMFxTPVJRBNtD3kmQd7OsF0mVaJ_PRn_f06mH5LP67ufK5XxdHj1Wgi5ZWSmPzWmc6SbDbIWjrSnbQDi_QfWfR5U3kRl36EJYjJzcQ5n0uVo1QWCYcXpkIkInrp25NwjaaAar-WTqbED3",
+              }
             ].map((leader) => (
               <article key={leader.name} className={styles.leaderCard}>
                 <div className={styles.leaderImageWrap}>
