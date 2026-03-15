@@ -131,7 +131,7 @@ function AboutPage(): JSX.Element {
               <h2>Help us build the next wave of enterprise AI.</h2>
               <p>
                 We are expanding across Engineering, Product, Design, and Sales. If you care about technical depth,
-                product impact, and high ownership, explore open roles.
+                product impact, and high ownership, explore our open roles.
               </p>
             </div>
             <div className={styles.careersActions}>
