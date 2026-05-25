@@ -24,7 +24,7 @@ function HomePage(): JSX.Element {
       <Navbar items={navItems} />
       <main>
         <HeroSection content={heroContent} />
-        <LogoWallSection brands={trustedBrands} />
+        {/* <LogoWallSection brands={trustedBrands} /> */}
         <OfferingsSection items={offerings} />
         <ClientValueSection stats={clientStats} bulletPoints={clientValuePoints} />
         <CaseStudiesSection studies={caseStudies} />
