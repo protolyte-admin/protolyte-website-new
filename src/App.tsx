@@ -7,6 +7,9 @@ import HomePage from "./pages/HomePage";
 import RecoSalesPptPage from "./pages/RecoSalesPptPage";
 import ServicesPage from "./pages/ServicesPage";
 import SolutionsPage from "./pages/SolutionsPage";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import DataDeletion from "./pages/DataDeletion";
 
 function App(): JSX.Element {
   return (
@@ -21,6 +24,9 @@ function App(): JSX.Element {
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/products/recosales/ppt" element={<RecoSalesPptPage />} />
         <Route path="*" element={<Navigate to="/home" replace />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/data-deletion" element={<DataDeletion />} />
       </Routes>
     </HashRouter>
   );

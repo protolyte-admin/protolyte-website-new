@@ -3,6 +3,7 @@ import PrimaryButton from "../common/PrimaryButton";
 import type { FooterLinkGroup } from "../../types/home";
 import styles from "./Footer.module.css";
 import type { JSX } from "react";
+import { Link } from "react-router-dom";
 
 interface FooterProps {
   groups: FooterLinkGroup[];
@@ -61,9 +62,10 @@ function Footer({ groups }: FooterProps): JSX.Element {
         <div className={styles.bottomRow}>
           <p>� 2026 Protolyte Systems Inc. All rights reserved.</p>
           <div className={styles.bottomLinks}>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookie Settings</a>
+
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/terms-of-service">Terms of Service</Link>
+            <Link to="/data-deletion">Data Deletion</Link>
           </div>
         </div>
       </div>
